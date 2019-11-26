@@ -10,9 +10,6 @@ var map = L.map('map').fitWorld();
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	maxZoom: 19,
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-<<<<<<< Updated upstream
-}).addTo(map);
-=======
 }).addTo(map); //adds a tile layer from openStreetMap.org to the map
 
 L.marker([56.45584517820995, -2.990673780441284]).addTo(map) //adds a marker to the map at the Little Green Larder
@@ -73,7 +70,6 @@ L.polygon([
 	[56.459602, -2.979840],
 	[56.456164, -2.985466]
 ]).addTo(map); //adds a polygon linking 3 positions 2 markers + 1
->>>>>>> Stashed changes
 
 map.locate({setView: true, maxZoom: 16});
 
