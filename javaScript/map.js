@@ -70,6 +70,7 @@ L.polygon([
 	[56.462521, -2.985579],
 	[56.456213, -2.992741],
 	[56.458093, -2.973955],
+	[56.459602, -2.979840],
 	[56.456164, -2.985466]
 ]).addTo(map); //adds a polygon linking 3 positions 2 markers + 1
 >>>>>>> Stashed changes
