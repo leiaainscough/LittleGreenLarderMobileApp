@@ -1,11 +1,6 @@
 
 var map = L.map('map').fitWorld();
 
-// L.tileLayer('https://api.tiles.mapbox.com/v4/MapID/997/256/{z}/{x}/{y}.png?access_token={sk.eyJ1Ijoic3R1ZmxvIiwiYSI6ImNrMzh3aDRsZTA5dTUzZ3BidWxsb3NqdDEifQ.l30Hor2Z_Ec8s1nhqtb6MA}', {
-//     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-//     maxZoom: 18
-// }).addTo(map);
-
 //https://leaflet-extras.github.io/leaflet-providers/preview/
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	maxZoom: 19,
@@ -71,23 +66,23 @@ L.polygon([
 	[56.456164, -2.985466]
 ]).addTo(map); //adds a polygon linking 3 positions 2 markers + 1
 
-map.locate({setView: true, maxZoom: 16});
+map.locate({setView: true, maxZoom: 16}); //sets the map to zoom in on your position if one is found
 
 function onLocationFound(e) {
 
-  var radius = e.accuracy;
+  var radius = e.accuracy; //sets the radius equal to the accuracy of the location found
 
-  L.marker(e.latlng).addTo(map)
-  .bindPopup("You are " + radius + "Meters from this location").openPopup();
+  L.marker(e.latlng).addTo(map) //takes in the position of the user and drops a point.
+  .bindPopup("You are " + radius + "Meters from this location").openPopup(); //tells the user the accuracy of the point
 
-  L.circle(e.latlng, radius).addTo(map);
+  L.circle(e.latlng, radius).addTo(map); //adds a curcle with the radius of the accuracy
 
 }
 
 map.on('locationfound' , onLocationFound);
 
 function onLocationError(e) {
-    alert(e.message);
+    alert(e.message); //alerts user with the error with finding location if one occurs
 }
 
 map.on('locationerror', onLocationError);
