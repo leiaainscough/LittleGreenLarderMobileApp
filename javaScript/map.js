@@ -7,47 +7,65 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map); //adds a tile layer from openStreetMap.org to the map
 
-L.marker([56.45584517820995, -2.990673780441284]).addTo(map) //adds a marker to the map at the Little Green Larder
+var greenIcon = new L.Icon({
+  iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  ShadowSize: [41, 41]
+});
+
+var yellowIcon = new L.Icon({
+  iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-yellow.png',
+  shadowUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-yellow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  ShadowSize: [41, 41]
+});
+
+L.marker([56.45584517820995, -2.990673780441284], {icon: greenIcon}).addTo(map) //adds a marker to the map at the Little Green Larder
 
     .bindPopup('The Little Green Larder.<br><br> A small shop awaiting work to increase in size.<br> Run in order to reduce over wasted plastics and containers.')
     .openPopup();
 
-L.marker([56.46026612542765, -2.97567218542099]).addTo(map) //adds a marker to the map at the Council Waste Management site
+L.marker([56.46026612542765, -2.97567218542099], {icon: yellowIcon}).addTo(map) //adds a marker to the map at the Council Waste Management site
 
 		 .bindPopup('Dundee City Council Waste Management.<br><br> The Councils waste management site right in the center of Dundee.')
 		 .openPopup();
 
-L.marker([56.461115, -2.967385]).addTo(map) //adds a marker to the map at the Council Waste Management site
+L.marker([56.461115, -2.967385], {icon: yellowIcon}).addTo(map) //adds a marker to the map at the Council Waste Management site
 
 		 		 .bindPopup('Birchwood Food Emporium.<br><br> Birchwood Food Emporium and Cafe is an addition to Dundee\'s city centre, rebranded and expanded from the former WholeFoods Dundee. The family run business offers a wide selction of organic wholefoods produced and sourced locally. Their cosy cafe offers a delicious menu catering for all dietary requirements.')
 		 		 .openPopup();
 
-L.marker([56.458471, -2.973174]).addTo(map) //adds a marker to the map at the Council Waste Management site
+L.marker([56.458471, -2.973174], {icon: yellowIcon}).addTo(map) //adds a marker to the map at the Council Waste Management site
 
 				 .bindPopup('Marwick\'s Vegan Kitchen.<br><br> Marwick\'s Vegan Kitchen hasn\'t always been fully vegan. However, after thriving in "Veganuary" in 2017, it was clear there was no going back.')
 				 .openPopup();
 
-L.marker([56.462521, -2.985579]).addTo(map) //adds a marker to the map at the Council Waste Management site
+L.marker([56.462521, -2.985579], {icon: yellowIcon}).addTo(map) //adds a marker to the map at the Council Waste Management site
 
 				.bindPopup('Tayside ReUsers.<br><br> Dundee has always been ahead of the curve when  it comes to sustainability with social enterprises, and  Tayside ReUsers is no exception. By trading for 20 years, they have helped to raise awareness of environmental concerns with emphasis on the importance of recycling, all to support our local community.')
 				.openPopup();
 
-L.marker([56.456213, -2.992741]).addTo(map) //adds a marker to the map at the Council Waste Management site
+L.marker([56.456213, -2.992741], {icon: yellowIcon}).addTo(map) //adds a marker to the map at the Council Waste Management site
 
 				.bindPopup('Le Freak Records.<br><br> Le Freak Records is a record shop based in Dundee\'s trendy West End. It was founded in 2017 by two brothers: Jack and Tom. Their blue and yellow shop is a staple to to the sustainable Perth Road scene. They sell new  and second hand records alongside intimate store gigs and DJ sets by the Le Freak and Friends DJ Set. They are huge believers in giving a new life to old products. Their DJ Booth is made entirely from upcycled pallets and off cuts. Their walls are also made of old obsolete computer circuit boards.')
 				.openPopup();
 
-L.marker([56.458093, -2.973955]).addTo(map) //adds a marker to the map at the Council Waste Management site
+L.marker([56.458093, -2.973955], {icon: yellowIcon}).addTo(map) //adds a marker to the map at the Council Waste Management site
 
 				.bindPopup('Groucho\'s Record Store.<br><br> In Dundee, you are spoilt for choice when it comes to sustainable options for listening to music! Groucho\'s is "one of the longest running and well renowned CD, DVD and record shops in Dundee". It also won Dundee\'s Independent Retailer of the Year four times.')
 				.openPopup();
 
-L.marker([56.459602, -2.979840]).addTo(map) //adds a marker to the map at the Council Waste Management site
+L.marker([56.459602, -2.979840], {icon: yellowIcon}).addTo(map) //adds a marker to the map at the Council Waste Management site
 
 				.bindPopup('Spex Pistols.<br><br> Spex Pistols is a unique creative gem, located just off the university campus. Not only is it "fully stocked with a wide variety of designer, vintage and classic frames", catering for every pocket, personality and profile. They also offer a frame repair service described as "gold-dust" in today\'s economy.')
 				.openPopup();
 
-L.marker([56.456164, -2.985466]).addTo(map) //adds a marker to the map at the Council Waste Management site
+L.marker([56.456164, -2.985466], {icon: yellowIcon}).addTo(map) //adds a marker to the map at the Council Waste Management site
 
 				.bindPopup('Gate Church International.<br><br> Gate Church International have high aims of becoming the "Greenest Church in Scotland". Since they are funded by the Scottish Government\'s Climate Challenge Fund, they are doing everything they can to help our local community to transition to a more sustainable way of life. Through their \'Give Boxes\' network, you can be part of the change by donating clothing, household goods, toys and electrical items.')
 				.openPopup();
