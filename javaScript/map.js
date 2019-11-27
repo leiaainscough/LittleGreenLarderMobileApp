@@ -25,9 +25,11 @@ var yellowIcon = new L.Icon({
   ShadowSize: [41, 41]
 });
 
+
+
 L.marker([56.45584517820995, -2.990673780441284], {icon: greenIcon}).addTo(map) //adds a marker to the map at the Little Green Larder
 
-    .bindPopup('The Little Green Larder.<br><br> A small shop awaiting work to increase in size.<br> Run in order to reduce over wasted plastics and containers.')
+    .bindPopup("<div class='card' style='width: 18rem'> <img class='card-img-top' src='D:/Uni/First Year/Authoring/LittleGreenLarderMobileApp/images/shop.jpg' alt='Card image cap'> <div class='card-body'> <h5 class='card-title'>The Little Green Larder.</h5> <p class='card-text'>A small shop awaiting work to increase in size.<br> Run in order to reduce over wasted plastics and containers.</p></div></div>")
     .openPopup();
 
 L.marker([56.46026612542765, -2.97567218542099], {icon: yellowIcon}).addTo(map) //adds a marker to the map at the Council Waste Management site
