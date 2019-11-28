@@ -103,6 +103,8 @@ map.on('locationfound' , onLocationFound);
 
 function onLocationError(e) {
     alert(e.message); //alerts user with the error with finding location if one occurs
+
+		map.setView(new L.LatLng(56.45584517820995, -2.990673780441284), 15);
 }
 
 map.on('locationerror', onLocationError);
