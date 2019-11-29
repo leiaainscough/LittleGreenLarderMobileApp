@@ -33,7 +33,7 @@ html,body, #map {
 
 .card h5 {
   text-align: left;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: bold;
   color: green;
 }
@@ -42,4 +42,5 @@ html,body, #map {
   background-color: #84eb67;
   text-align: center;
   color: black;
+  font-size: 12px;
 }

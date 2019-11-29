@@ -29,62 +29,51 @@ var yellowIcon = new L.Icon({
 
 L.marker([56.45584517820995, -2.990673780441284], {icon: greenIcon}).addTo(map) //adds a marker to the map at the Little Green Larder
 
-    	.bindPopup("<div class='card'> <img class='card-img-top' src='https://scontent.flhr4-1.fna.fbcdn.net/v/t1.0-9/p960x960/68936048_428811794509563_3131775309112672256_o.jpg?_nc_cat=104&_nc_ohc=ZLdSufreARkAQkYbSP3w4q_56fulQ0qz6vBvwX4SFjMdCeMi6bJO1Yoxg&_nc_ht=scontent.flhr4-1.fna&oh=4dbb868472c733874ef8499f083f6f07&oe=5E7FAAF3' alt='Card image cap'> <div class='card-body'><h5 class='card-title'>The Little Green Larder</h5> <p class='card-text'>A eco-friendly, zero-waste shop in Dundee which sells mostly package free options for our everyday shopping needs.</p></div><ul class='list-group list-group-flush'><li class='list-group-item'><strong>Sustainability Tip:</strong> Don't use plastic bags at checkout! Bring your own bags for your grocery shop.</li></ul></div>")
+    	.bindPopup("<div class='card'> <img class='card-img-top' src='images/shop-front.jpg'> <div class='card-body'><h5 class='card-title'>The Little Green Larder</h5> <p class='card-text'>A eco-friendly, zero-waste shop in Dundee which sells mostly package free options for our everyday shopping needs.</p></div><ul class='list-group list-group-flush'><li class='list-group-item'><strong>Sustainability Tip:</strong> Don't use plastic bags at checkout! Bring your own bags for your grocery shop.</li></ul></div>")
     	.openPopup();
 
 L.marker([56.46026612542765, -2.97567218542099], {icon: yellowIcon}).addTo(map) //adds a marker to the map at the Council Waste Management site
 
-		 .bindPopup('Dundee City Council Waste Management.<br><br> The Councils waste management site right in the center of Dundee.')
-		 .openPopup();
+			.bindPopup("<div class='card'> <img class='card-img-top' src='images/dundeecouncil.jpg' alt='DundeeWaste'> <div class='card-body'><h5 class='card-title'>Dundee City Council Waste Management</h5> <p class='card-text'> The Councils waste management site right in the center of Dundee.</p></div><ul class='list-group list-group-flush'> <li class='list-group-item'><strong>Sustainability Tip: </strong>Try clothes shopping at charity shops! Buying second hand clothes means less waste and slows down the fast fashion industry.</li></ul></div>")
+			.openPopup();
+
 
 L.marker([56.461115, -2.967385], {icon: yellowIcon}).addTo(map) //adds a marker to the map at the Council Waste Management site
 
-		 .bindPopup('Birchwood Food Emporium.<br><br> Birchwood Food Emporium and Cafe is an addition to Dundee\'s city centre, rebranded and expanded from the former WholeFoods Dundee. The family run business offers a wide selction of organic wholefoods produced and sourced locally. Their cosy cafe offers a delicious menu catering for all dietary requirements.')
- 		 .openPopup();
+			.bindPopup("<div class='card'> <img class='card-img-top' src='images/birchwood.jpg’ alt='Birchwood'> <div class='card-body'><h5 class='card-title'>Birchwood Food Emporium</h5> <p class='card-text'>Birchwood Food Emporium and Cafe is a family run business that offers a wide selection of organic wholefoods produced and sourced locally. The cosy cafe offers a delicious menu catering for all dietary requirements.</p></div><ul class='list-group list-group-flush'> <li class='list-group-item'><strong>Sustainability Tip: </strong>Ditch sponges and scouring pads made from non-renewable sources to those made from sustainably grown crops, such as loofah and coconut.</li></ul></div>")
+			.openPopup();
+
 
 L.marker([56.458471, -2.973174], {icon: yellowIcon}).addTo(map) //adds a marker to the map at the Council Waste Management site
 
-			.bindPopup('Marwick\'s Vegan Kitchen.<br><br> Marwick\'s Vegan Kitchen hasn\'t always been fully vegan. However, after thriving in "Veganuary" in 2017, it was clear there was no going back.')
+			.bindPopup("<div class='card'> <img src='images/marwicks.jpg’ class='card-img-top' alt='Marwicks'> <div class='card-body'><h5 class='card-title'>Marwick\'s Vegan Kitchen</h5> <p class='card-text'> Marwick\'s Vegan Kitchen hasn\'t always been fully vegan. However, after thriving in <em>Veganuary</em> in 2017, it was clear there was no going back.</p></div><ul class='list-group list-group-flush'> <li class='list-group-item'><strong>Sustainability Tip: </strong>Invest in a reusable metal straw instead of using plastic ones. </li></ul></div>")
 			.openPopup();
 
 L.marker([56.462521, -2.985579], {icon: yellowIcon}).addTo(map) //adds a marker to the map at the Council Waste Management site
 
-			.bindPopup('Tayside ReUsers.<br><br> Dundee has always been ahead of the curve when  it comes to sustainability with social enterprises, and  Tayside ReUsers is no exception. By trading for 20 years, they have helped to raise awareness of environmental concerns with emphasis on the importance of recycling, all to support our local community.')
+			.bindPopup("<div class='card'> <img class='card-img-top' src='images/taysideReusers.jpg’ alt='TaysideReUsers'> <div class='card-body'><h5 class='card-title'>Tayside ReUsers</h5> <p class='card-text'>Dundee has always been ahead of the curve when  it comes to sustainability with social enterprises, and  Tayside ReUsers is no exception. By trading for 20 years, they have helped to raise awareness of environmental concerns with emphasis on the importance of recycling, all to support our local community.</p></div><ul class='list-group list-group-flush'> <li class='list-group-item'><strong>Sustainability Tip: </strong>Try invest in a Bamboo toothbrush and toothpaste in plastic-free packaging. This reduces non-biodegradable plastic waste.</li></ul></div>")
 			.openPopup();
 
 L.marker([56.456213, -2.992741], {icon: yellowIcon}).addTo(map) //adds a marker to the map at the Council Waste Management site
 
-			.bindPopup('Le Freak Records.<br><br> Le Freak Records is a record shop based in Dundee\'s trendy West End. It was founded in 2017 by two brothers: Jack and Tom. Their blue and yellow shop is a staple to to the sustainable Perth Road scene. They sell new  and second hand records alongside intimate store gigs and DJ sets by the Le Freak and Friends DJ Set. They are huge believers in giving a new life to old products. Their DJ Booth is made entirely from upcycled pallets and off cuts. Their walls are also made of old obsolete computer circuit boards.')
+			.bindPopup("<div class='card'> <img class='card-img-top' src='images/leFreak.jpg’ alt='FreakRecords'> <div class='card-body'><h5 class='card-title'>Le Freak Records</h5> <p class='card-text'>Le Freak Records is a record shop based in Dundee\'s trendy West End. They sell new and second hand records alongside intimate store gigs and DJ sets by the Le Freak and Friends DJ Set. Their DJ Booth is made entirely from upcycled pallets and off cuts.</p></div><ul class='list-group list-group-flush'> <li class='list-group-item'><strong>Sustainability Tip: </strong>If you’re in the market for a new car, take a look at electric cars. There is new charging points being added everyday across the UK.</li></ul></div>")
 			.openPopup();
 
 L.marker([56.458093, -2.973955], {icon: yellowIcon}).addTo(map) //adds a marker to the map at the Council Waste Management site
 
-			.bindPopup('Groucho\'s Record Store.<br><br> In Dundee, you are spoilt for choice when it comes to sustainable options for listening to music! Groucho\'s is "one of the longest running and well renowned CD, DVD and record shops in Dundee". It also won Dundee\'s Independent Retailer of the Year four times.')
+			.bindPopup("<div class='card'><img class='card-img-top' src =src='images/grouchos.jpg' alt='Grouchos'> <div class ='card-body'><h5 class='card-title'>Groucho\'s Record Store</h5><p class='card-text'>In Dundee, you are spoilt for choice for sustainable music options! Groucho\'s is a second hand music shop that has won Dundee\'s Independent Retailer of the Year four times.</p></div><ul class='list-group list-group-flush'><li class='list-group-item'><strong>Sustainability Tip: </strong>Take a reusable coffee flask with you when you pop in to your local coffee shop. It’ll reduce the waste of single-waste cups and some coffee shops even charge less if you have a reusable cup!</li></ul></div>")
 			.openPopup();
 
 L.marker([56.459602, -2.979840], {icon: yellowIcon}).addTo(map) //adds a marker to the map at the Council Waste Management site
 
-			.bindPopup('Spex Pistols.<br><br> Spex Pistols is a unique creative gem, located just off the university campus. Not only is it "fully stocked with a wide variety of designer, vintage and classic frames", catering for every pocket, personality and profile. They also offer a frame repair service described as "gold-dust" in today\'s economy.')
+			.bindPopup("<div class='card'><img class='card-img-top' src='images/spexPistols.jpg’ alt='SpexPistols'> <div class='card-body'><h5 class='card-title'>Spex Pistols</h5> <p class='card-text'>Spex Pistols is a unique creative gem, not only is it fully stocked with a wide variety of designer, vintage and classic frames, catering for every pocket, personality and profile. They also offer a frame repair service described as <em>gold-dust</em>.</p></div><ul class='list-group list-group-flush'><li class='list-group-item'><strong>Sustainability Tip: </strong>Eat less meat! Having even one or two days a week not eating red meat can significantly reduce your carbon footprint</li></ul><div>")
 			.openPopup();
 
 L.marker([56.456164, -2.985466], {icon: yellowIcon}).addTo(map) //adds a marker to the map at the Council Waste Management site
 
-			.bindPopup('Gate Church International.<br><br> Gate Church International have high aims of becoming the "Greenest Church in Scotland". Since they are funded by the Scottish Government\'s Climate Challenge Fund, they are doing everything they can to help our local community to transition to a more sustainable way of life. Through their \'Give Boxes\' network, you can be part of the change by donating clothing, household goods, toys and electrical items.')
+			.bindPopup("<div class='card'><img class='card-image-top' src='images/gateChurch.jpg' alt='GateChurch'><h5 class='card-title'>Gate Church International</h5><p class='card-text'>Gate Church International have high aims of becoming the <em>Greenest Church in Scotland</em>. Through their <em>Give Boxes</em> network, you can be part of the change by donating clothing, household goods, toys and electrical items.</p></div><ul class='list-group list-group-flush'><li class='list-group-item'><strong>Sustainability Tip: </strong> Buy local! From clothes to food, buying locally reduces transportation costs and supports local businesses.</li></ul></div>")
 			.openPopup();
 
-
-L.polygon([
-	[56.45584517820995, -2.990673780441284],
-	[56.46026612542765, -2.97567218542099],
-	[56.460403947559264,-2.9863929748535156],
-	[56.461115, -2.967385],
-	[56.462521, -2.985579],
-	[56.462521, -2.985579],
-	[56.456213, -2.992741],
-	[56.458093, -2.973955],
-	[56.459602, -2.979840],
-	[56.456164, -2.985466]
-]).addTo(map); //adds a polygon linking 3 positions 2 markers + 1
 
 map.locate({setView: true, maxZoom: 16}); //sets the map to zoom in on your position if one is found
 
