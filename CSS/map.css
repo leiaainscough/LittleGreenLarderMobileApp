@@ -16,7 +16,6 @@ html,body, #map {
   width: 18rem;
   border-width: 2px;
   border-color: white;
-
 }
 
 /*When the screen width is less than 500px, A card will take up the entire width */
