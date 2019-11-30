@@ -29,7 +29,7 @@ var yellowIcon = new L.Icon({
 
 L.marker([56.45584517820995, -2.990673780441284], {icon: greenIcon}).addTo(map) //adds a marker to the map at the Little Green Larder
 
-    	.bindPopup("<div class='card'> <img class='card-img-top' src='images/shop-front.jpg'> <div class='card-body'><h5 class='card-title'>The Little Green Larder</h5> <p class='card-text'>A eco-friendly, zero-waste shop in Dundee which sells mostly package free options for our everyday shopping needs.</p></div><ul class='list-group list-group-flush'><li class='list-group-item'><strong>Sustainability Tip:</strong> Don't use plastic bags at checkout! Bring your own bags for your grocery shop.</li></ul></div>")
+    	.bindPopup("<div class='card'> <img class='card-img-top' src='images/shop-front.jpg'> <div class='card-body'><h5 class='card-title'>The Little Green Larder</h5> <p class='card-text' id= 'article-container'>An eco-friendly, zero-waste shop in Dundee which sells mostly package free options for our everyday shopping needs.</p></div><ul class='list-group list-group-flush'><li class='list-group-item'><strong>Sustainability Tip:</strong> Don't use plastic bags at checkout! Bring your own bags for your grocery shop.</li><li class='list-group-item'><button onclick='responsiveVoice.speak(document.getElementById('article-container').textContent)type='button' value='Play'>Play</button></li></ul></div>")
     	.openPopup();
 
 L.marker([56.46026612542765, -2.97567218542099], {icon: yellowIcon}).addTo(map) //adds a marker to the map at the Council Waste Management site
