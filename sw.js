@@ -1,9 +1,9 @@
 var CACHE_NAME = 'lgl-PWA';
 var urlsToCache = [
   '/',
-  '/index.html',
-  '/javaScript/map.js',
-  '/manifest.json'
+  '/LittleGreenLarderMobileApp/index.html',
+  '/LittleGreenLarderMobileApp/javaScript/map.js',
+  '/LittleGreenLarderMobileApp/manifest.json'
 ];
 
 self.addEventListener('install', function(event){
