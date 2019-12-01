@@ -11,3 +11,40 @@ html,body, #map {
   width: 100vw;
 
 }
+
+.card {
+  width: 18rem;
+  border-width: 2px;
+  border-color: white;
+}
+
+/*When the screen width is less than 500px, A card will take up the entire width */
+@media only screen and (max-width: 500px) {
+  .card {
+    width: auto;
+  }
+}
+
+.card p {
+  text-align: left;
+  font-size: 15px;
+}
+
+.card h5 {
+  text-align: left;
+  font-size: 17px;
+  font-weight: bold;
+  color: green;
+}
+
+.card li {
+  background-color: #84eb67;
+  text-align: center;
+  color: black;
+  font-size: 12px;
+}
+
+.card-img-top{
+  width: 100%;
+  display: block;
+}
