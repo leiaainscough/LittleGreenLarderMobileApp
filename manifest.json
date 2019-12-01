@@ -1,7 +1,7 @@
 {
 "short_name": "LGL Maps",
 "name": "Little Green Larder Maps",
-"start_url": "/",
+"start_url": "https://leiaainscough.github.io/LittleGreenLarderMobileApp/",
 "theme_color": "#00000",
 "background_color": "#00000",
 "display": "standalone",
