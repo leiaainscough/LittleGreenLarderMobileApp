@@ -5,7 +5,7 @@
 "theme_color": "#00000",
 "background_color": "#00000",
 "display": "standalone",
-"orientation": "landscape",
+"orientation": "portrait",
 "icons": [{
       "src": "https://stuflo19.github.io/Authoring/LGL%20stuff/images/app-logo.png",
       "type": "image/png",

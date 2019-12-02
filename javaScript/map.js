@@ -25,7 +25,18 @@ var yellowIcon = new L.Icon({
   ShadowSize: [41, 41]
 });
 
+var legend = L.control({ position: "bottomright" });
 
+		legend.onAdd = function(map) {
+		  var div = L.DomUtil.create("div", "legend");
+		  div.innerHTML += "<h4>Little Green Map</h4>";
+		 	div.innerHTML += '<a href="https://www.facebook.com/thelittlegreenlarder/"><img alt="app logo" src="images/app-logo.png" width="100" height="75"><br>'
+		  div.innerHTML += '<a href="https://www.facebook.com/thelittlegreenlarder/" class="fab fa-facebook fa-2x"></a><a href="https://www.instagram.com/thelittlegreenlarder/" class="fab fa-instagram fa-2x"><span>		</span><a href="http://thelittlegreenblogger.com/"  class="fab fa-blogger-b fa-2x"></a><br>';
+
+			return div;
+};
+
+legend.addTo(map);
 
 L.marker([56.45584517820995, -2.990673780441284], {icon: greenIcon}).addTo(map) //adds a marker to the map at the Little Green Larder
 
@@ -73,7 +84,6 @@ L.marker([56.456164, -2.985466], {icon: yellowIcon}).addTo(map) //adds a marker 
 
 			.bindPopup("<div class ='card'><img class='card-img-top' src='images/gateChurch.jpeg' alt='gateChurch'><div class='card-body'><h5 class='card-title'>Gate Church International</h5><p class='card-text'>Gate Church International have high aims of becoming the <em>Greenest Church in Scotland</em>. Through their Give Boxes network, you can be part of the change by donating clothing, household goods, toys and electrical items.</p></div><ul class='list-group list-group-flush'><li class='list-group-item'><strong>Sustainability Tip: </strong>Buy local! From clothes to food, buying locally reduces transportation costs and supports local businesses.</li></ul></div>")
 			.openPopup();
-
 
 map.locate({setView: true, maxZoom: 16}); //sets the map to zoom in on your position if one is found
 
